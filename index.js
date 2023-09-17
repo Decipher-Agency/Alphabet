@@ -12,64 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// // Array of image URLs
-// const imageUrls = ["./IMG/animation aquapirate.png", 
-// "./IMG/logo 3-03.png",
-// "./IMG/IMG_1147-01.png",
-// "./IMG/IMG_1420.JPG",
-// "./IMG/show equilibre-01.png"]; 
+// ! IMAGE JAVASCRIPT IN ABOUT SECTION
 
-// // Add more images as needed
-
-// let currentIndex = 0;
-// const imageElement = document.getElementById("image");
-
-// function changeImage() {
-//   // Fade out the current image
-//   imageElement.style.opacity = 0;
-
-//   // Wait for the fade out animation to complete
-//   setTimeout(() => {
-//     // Change the image source
-//     imageElement.src = imageUrls[currentIndex];
-
-//     // Increment the index or reset it to 0 if at the end
-//     currentIndex = (currentIndex + 1) % imageUrls.length;
-
-//     // Fade in the new image
-//     imageElement.style.opacity = 1;
-//   }, 5000); // Adjust the duration of the fade out/in animation as needed
-// }
-
-// // Initial image change
-// changeImage();
-
-// // Set an interval to change the image at regular intervals
-// setInterval(changeImage, 5000); // Change image every 3 seconds (adjust as needed)
-
-// function changeImage() {
-//   // Remove the fade-in animation class and add the fade-out animation class
-//   imageElement.classList.remove("animate-fade-in");
-//   imageElement.classList.add("animate-fade-out");
-
-//   // Wait for the fade-out animation to complete
-//   setTimeout(() => {
-//     // Change the image source
-//     imageElement.src = imageUrls[currentIndex];
-
-//     // Remove the fade-out animation class and add the fade-in animation class
-//     imageElement.classList.remove("animate-fade-out");
-//     imageElement.classList.add("animate-fade-in");
-
-//     // Increment the index or reset it to 0 if at the end
-//     currentIndex = (currentIndex + 1) % imageUrls.length;
-//   }, 5000); // Adjust the duration of the fade-out/in animation as needed
-// }
-
-// ... (remaining code)
-
-// Array of image URLs
-const imageUrls = [
+const images = [
   "./IMG/animation aquapirate.png" ,
   "./IMG/image-1.png" ,
   "./IMG/image-2.png" ,
@@ -80,32 +25,26 @@ const imageUrls = [
   "./IMG/image-7.png" ,
   "./IMG/image-8.png" ,
 ];
-
+const fadeInDuration = 1500; // 1,5 second
+const fadeOutDuration = 1500; // 1,5 second
+const pauseDuration = 3000; // 3 seconds
+const totalImages = images.length;
 let currentIndex = 0;
-const imageElement = document.getElementById("image");
 
-function changeImageWithFade() {
-  // Fade out the current image
-  imageElement.style.transition = `opacity 1.5s ease-in-out`;
-  imageElement.style.opacity = 0;
-
-  // Wait for the fade-out animation to complete
+function fadeInImage(index) {
+  document.querySelector('.fade-image').src = images[index];
+  document.querySelector('.fade-image').style.opacity = '1';
   setTimeout(() => {
-    // Change the image source
-    imageElement.src = imageUrls[currentIndex];
-
-    // Increment the index or reset it to 0 if at the end
-    currentIndex = (currentIndex + 1) % imageUrls.length;
-
-    // Fade in the new image
-    imageElement.style.transition = `opacity 1.5s ease-in-out`;
-    imageElement.style.opacity = 1;
-
-    // Wait for 5 seconds before repeating
-    setTimeout(changeImageWithFade, 5000); // 5 seconds
-  }, 1500); // 1.5 seconds
+    fadeOutImage(index);
+  }, pauseDuration);
 }
 
-// Initial image change (start with fade-in animation)
-imageElement.style.opacity = 0; // Initially set to 0 for fade-in effect
-changeImageWithFade(); // Start the process
+function fadeOutImage(index) {
+  document.querySelector('.fade-image').style.opacity = '0';
+  setTimeout(() => {
+    currentIndex = (currentIndex + 1) % totalImages;
+    fadeInImage(currentIndex);
+  }, fadeOutDuration);
+}
+
+fadeInImage(currentIndex);

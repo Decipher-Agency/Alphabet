@@ -1,6 +1,7 @@
 * {
   font-family: 'Encode Sans Condensed', sans-serif;
   font-family: 'Grandstander', cursive;
+  scroll-behavior: smooth;
 }
 
 
@@ -26,10 +27,8 @@
     opacity: 0;
   }
 }
-.animate-fade-in {
-  animation: fade-in 1.5s ease-in-out;
-}
 
-.animate-fade-out {
-  animation: fade-out 1.5s ease-in-out;
+.fade-image {
+  transition: opacity 1.5s ease-in-out;
+  opacity: 0;
 }
