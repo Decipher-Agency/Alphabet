@@ -1,0 +1,35 @@
+* {
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-family: 'Grandstander', cursive;
+}
+
+
+:root {
+  --alph-blue: #6420D4 ;
+  --alph-pink: #FC2D7A ;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.animate-fade-in {
+  animation: fade-in 1.5s ease-in-out;
+}
+
+.animate-fade-out {
+  animation: fade-out 1.5s ease-in-out;
+}

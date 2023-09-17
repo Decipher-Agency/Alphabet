@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alphabet Corp.</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Grandstander&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<header class="fixed inset-x-0 top-0 z-10 w-full bg-[#6420D4]">
+    <section class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <!-- lg+ -->
+        <nav class="flex items-center justify-between h-16 lg:h-20">
+            <div class="flex-shrink-0">
+                <a href="#" title="" class="flex">
+                    <img width="140" height="140"  src="./IMG/Logo-alp.png" alt="" />
+                </a>
+            </div>
+
+            <button type="button" class="inline-flex p-2 text-white transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100 hover:text-[#6420D4] focus:text-red-500" aria-controls="mobile-menu" aria-expanded="false">
+                <!-- Menu open: "hidden", Menu closed: "block" -->
+                <svg class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+
+                <!-- Menu open: "block", Menu closed: "hidden" -->
+                <svg class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+
+            <div class="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10" >
+                <a href="#" title="" class="text-base font-semibold text-white transition-all duration-200 hover:text-opacity-80"> Home </a>
+
+                <a href="#" title="" class="text-base font-semibold text-white transition-all duration-200 hover:text-opacity-80"> About </a>
+
+                <a href="#" title="" class="text-base font-semibold text-white transition-all duration-200 hover:text-opacity-80"> Packages </a>
+
+                <a class="inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold transition-all duration-200 rounded-lg text-white bg-[#FC2D7A]" role="button">
+                    Contact us
+                </a>
+            </div>
+        </nav>
+
+        <!-- xs to lg -->
+        <nav class="pt-4 pb-4 mb-4 bg-neutral-100 border border-gray-200 rounded-md shadow-md hidden" id="mobile-menu">
+            <div class="flow-root">
+                <div class="flex flex-col px-6 -my-2 space-y-1">
+                    <a href="#" title="Home page" class="inline-flex py-2 text-base font-semibold text-[#6420D4] transition-all duration-200 "> Home </a>
+
+                    <a href="#" title="About page" class="inline-flex py-2 text-base font-semibold text-[#6420D4] transition-all duration-200 "> About </a>
+
+                    <a href="#" title="Services page" class="inline-flex py-2 text-base font-semibold text-[#6420D4] transition-all duration-200 "> Packages </a>
+                </div>
+            </div>
+
+            <div class="px-6 mt-6">
+                <a href="#" title="Contact page" class="inline-flex justify-center px-4 py-3 text-base font-semibold text-white transition-all duration-200 bg-[#FC2D7A] rounded-md tems-center " role="button"> Contact </a>
+            </div>
+        </nav>
+    </section>
+</header>
+
+    <section class="bg-neutral-50 overflow-hidden">
+        <div class="flex flex-col lg:flex-row lg:items-stretch lg:min-h-[800px]">
+            <div class="relative flex items-center justify-center w-full lg:order-2 lg:w-7/12">
+
+                <div class="relative px-4 pt-24 pb-16 text-center sm:px-6 md:px-24 2xl:px-32 lg:py-24 lg:text-left">
+                    <h1 class="text-4xl font-bold text-[#6420D4] sm:text-6xl xl:text-6xl">
+                        Everyone deserves<br />
+                        <span class="text-[#FC2D7A]">magic</span> in their life.
+                    </h1>
+                    <p class="mt-8 mb-8 text-xl text-[#6420D4]">Alphabet Corporation pour vivre une experience magique</p>
+
+                    <button type="submit" class="inline-flex items-center justify-center w-full px-5 py-3.5 mt-4 font-semibold text-white transition-all duration-200 bg-[#FC2D7A] hover:shadow-lg hover:shadow-[#FC2D7A]/50 border border-transparent rounded-lg sm:w-auto sm:mt-0 md:mt-4 lg:mt-4 xl:mt-4">
+                    Cliquez ici si vous nous connaissez
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" class="ml-2">
+                        <path d="M3.75 9H14.25" stroke="#F8FAFC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 3.75L14.25 9L9 14.25" stroke="#F8FAFC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </button>
+                    <p class="mt-4 text-base underline text-[#6420D4] opacity-80"><a href="">Plus d'informations</a></p>
+                </div>
+            </div>
+
+            <div class="relative w-full overflow-hidden lg:order-2 h-96 lg:h-auto lg:w-5/12">
+                <div class="absolute inset-0">
+                    <img class="object-cover w-full h-full scale-100" src="./IMG/feeling the moment-01.png" alt="" />
+                </div>
+
+                <div class="absolute inset-0 bg-gradient-to-r from-neutral-50 via-transparent to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--* HEADER UP ; ABOUT BELOW *-->
+
+<main>
+<div class="bg-[#6420D4] w-full py-20"></div>
+
+    <section class="py-24 bg-white sm:py-24 lg:py-24 min-h-max">
+    <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-20">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none" class="mb-10">
+                    <path d="M38.852 38.8469H24.236C22.808 33.1539 22.094 27.2539 22.094 21.1469C22.094 14.9364 23.396 10.0198 26 6.397C28.688 2.6707 32.636 0.807556 37.844 0.807556V9.50225C33.644 9.50225 31.544 12.6593 31.544 18.9733V21.9232H38.852V38.8469ZM17.558 38.8469H2.94199C1.51399 33.1539 0.799988 27.2539 0.799988 21.1469C0.799988 14.9364 2.10199 10.0198 4.70599 6.397C7.39399 2.6707 11.342 0.807556 16.55 0.807556V9.50225C12.35 9.50225 10.25 12.6593 10.25 18.9733V21.9232H17.558V38.8469Z" fill="#CBD5E1"/>
+                </svg>
+                <h2 class="text-3xl font-semibold leading-tight text-[#6420D4] mb-10 sm:text-4xl lg:text-4xl">Bienvenue dans notre entreprise specialisee en evenementiel, plannification, organisation et creation d'experiences amusantes pour tous.</h2>
+                <p class="mt-4 sm:mb-14 md:mb-14 text-base leading-relaxed text-gray-600">Nous transformons chaque occasion en un moment memorable, offrant des moments de plaisir pour tous, dans un cadre magique. Rejoignez-nous pour des souvenirs inoubliables !</p>
+            </div>
+
+            <div class="relative pr-12 sm:pr-0 py-40 lg:py-0 my-40 lg:my-0 flex items-center justify-center">
+                <div class="absolute">
+                    <img class="object-bottom rounded-md animate-fade-in" src="" alt="" id="image"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>   
+        
+    <!--* ABOUT UP ; SERVICES BELOW *-->
+
+    <div class="bg-[#6420D4] w-full py-20"></div>
+
+    <section class="pt-10 overflow-hidden bg-[#6420D4] md:pt-0 sm:pt-16 2xl:pt-16">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div class="grid items-center grid-cols-1 md:grid-cols-2">
+                <div class="relative z-[1] mb-10 md:mb-0">
+
+                    <img class="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2" src="./IMG/blob alph.svg" alt="" />
+
+                    <img class="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110 md:-mb-24 lg:-mb-16" src="./IMG/zakariabenmoussa.png" alt="" />
+                </div>
+
+                <div class="relative z-[2]">
+                    <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Many ways to make your day enjoyable</h2>
+                    <div class="bg-white px-8 py-4 my-6 flex justify-evenly items-center rounded-lg hover:shadow-lg hover:shadow-white/50 transition-all duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="93" height="93" viewBox="0 0 93 93" fill="none">
+                            <path d="M68.0205 63.7076H24.9795C22.5976 63.7076 20.6666 65.6383 20.6666 68.0199C20.6666 70.4015 22.5976 72.3321 24.9795 72.3321H68.0205C70.4024 72.3321 72.3334 70.4015 72.3334 68.0199C72.3334 65.6383 70.4024 63.7076 68.0205 63.7076Z" fill="#9B9B9A"/>
+                            <path d="M72.3334 68.0206V72.3334H51.5685V63.709H72.3334V68.0206Z" fill="#D0CFCE"/>
+                            <path d="M46.4974 30.2068C48.9942 30.2068 51.0182 28.1828 51.0182 25.686C51.0182 23.1892 48.9942 21.1652 46.4974 21.1652C44.0006 21.1652 41.9766 23.1892 41.9766 25.686C41.9766 28.1828 44.0006 30.2068 46.4974 30.2068Z" fill="#FCEA2B"/>
+                            <path d="M69.2979 19.4137C69.08 19.3386 68.8489 19.309 68.6191 19.3268C68.3893 19.3446 68.1655 19.4094 67.9617 19.5172C67.758 19.6249 67.5785 19.7734 67.4344 19.9533C67.2903 20.1333 67.1847 20.3409 67.1241 20.5633L64.13 30.429C63.9133 30.8362 63.6185 31.1966 63.2623 31.4896C62.9061 31.7827 62.4956 32.0025 62.0543 32.1366L57.2144 33.3236C55.5481 33.7434 53.8599 34.0599 52.1549 34.2691L40.9252 35.101C39.2003 35.0374 37.5051 35.5632 36.1189 36.5916L35.318 37.187L35.1243 37.3511C33.7838 38.6137 32.7233 40.1438 32.0114 41.8422L31.1253 44.4901C30.8437 45.2871 30.4136 46.4922 29.999 47.5048C29.6607 48.2859 29.4916 49.1297 29.5028 49.9808C29.5139 50.8318 29.705 51.6709 30.0635 52.4429L34.9758 58.9632C35.2909 59.6568 35.982 60.1025 36.7428 60.1025C37.0088 60.1025 36.7983 60.1567 37.0579 60.0405C37.2846 59.9571 37.4913 59.8273 37.665 59.6595C37.8386 59.4916 37.9754 59.2894 38.0664 59.0657C38.1575 58.8421 38.2008 58.6018 38.1938 58.3604C38.1867 58.119 38.1294 57.8818 38.0254 57.6638L34.0083 50.486C33.8845 50.2002 33.8226 49.8914 33.8267 49.58C33.8307 49.2686 33.9005 48.9615 34.0315 48.679C34.6528 47.4338 35.3465 46.2248 36.1073 45.0597L37.4648 55.4602C37.5043 55.7629 37.6525 56.041 37.8818 56.2425C38.1112 56.444 38.406 56.5553 38.7113 56.5555L52.8925 56.5723C53.6223 56.5723 54.2151 55.9808 54.2164 55.251V46.2778C54.1549 44.1967 54.5684 42.1289 55.4254 40.2315L63.581 36.2648C64.5617 35.8206 65.442 35.1821 66.1689 34.3879C66.8958 33.5938 67.454 32.6605 67.8099 31.6445L70.4191 21.771C70.5589 21.3092 70.5215 20.8118 70.3141 20.3762C70.1068 19.9405 69.7445 19.5978 69.2979 19.415V19.4137Z" fill="#FCEA2B"/>
+                            <path d="M46.5026 30.207C48.9994 30.207 51.0234 28.1829 51.0234 25.6861C51.0234 23.1893 48.9994 21.1653 46.5026 21.1653C44.0058 21.1653 41.9817 23.1893 41.9817 25.6861C41.9817 28.1829 44.0058 30.207 46.5026 30.207Z" stroke="black" stroke-width="3.88833" stroke-miterlimit="10"/>
+                            <path d="M54.2125 39.7729L53.5667 41.7105C53.1527 43.1823 52.9356 44.7024 52.9208 46.2313V55.273M38.7125 55.273L37.4209 44.9396" stroke="black" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M35.7236 58.9633L29.8995 51.6524C29.6339 51.1113 29.4842 50.5207 29.46 49.9184C29.4357 49.3161 29.5375 48.7153 29.7587 48.1546C30.1643 47.1394 30.5485 46.1158 30.9109 45.0843L31.899 42.2168C32.5101 40.6369 33.4161 39.1878 34.5689 37.9466L34.7911 37.7257C36.0182 36.6186 37.5539 35.912 39.1931 35.7004L50.8413 34.804C52.5496 34.6472 54.2449 34.3719 55.915 33.9799L61.2366 32.6495C61.9864 32.4162 62.6755 32.0206 63.2551 31.4909C63.8346 30.9611 64.2904 30.3102 64.5898 29.5843L67.7789 20.3993" stroke="black" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M39.7123 26.421V22.2412C39.7123 20.4386 40.4284 18.7098 41.703 17.4352C42.9776 16.1605 44.7064 15.4445 46.509 15.4445C47.4017 15.4443 48.2857 15.62 49.1104 15.9615C49.9352 16.303 50.6846 16.8036 51.3159 17.4347C51.9472 18.0659 52.4479 18.8152 52.7896 19.6399C53.1312 20.4646 53.3071 21.3485 53.3071 22.2412V26.421" stroke="black" stroke-width="3.69333" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M27.8148 60.0405H44.3042M48.6868 60.0405H65.175M72.3308 68.0204V63.7089H20.6641V72.3333H72.3308V68.0204Z" stroke="black" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M60.2653 69.3121C60.9787 69.3121 61.5569 68.7338 61.5569 68.0204C61.5569 67.3071 60.9787 66.7288 60.2653 66.7288C59.5519 66.7288 58.9736 67.3071 58.9736 68.0204C58.9736 68.7338 59.5519 69.3121 60.2653 69.3121Z" fill="black"/>
+                            <path d="M64.1248 69.3121C64.8382 69.3121 65.4165 68.7338 65.4165 68.0204C65.4165 67.3071 64.8382 66.7288 64.1248 66.7288C63.4114 66.7288 62.8331 67.3071 62.8331 68.0204C62.8331 68.7338 63.4114 69.3121 64.1248 69.3121Z" fill="black"/>
+                            <path d="M39.4294 26.6213C38.8695 26.6213 38.3325 26.3988 37.9366 26.0029C37.5406 25.607 37.3182 25.07 37.3182 24.51C37.3182 23.9501 37.5406 23.4131 37.9366 23.0172C38.3325 22.6212 38.8695 22.3988 39.4294 22.3988M53.2903 22.3988C53.8502 22.3988 54.3872 22.6212 54.7832 23.0172C55.1791 23.4131 55.4015 23.9501 55.4015 24.51C55.4015 25.07 55.1791 25.607 54.7832 26.0029C54.3872 26.3988 53.8502 26.6213 53.2903 26.6213" stroke="black" stroke-width="3.69333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        <p class="font-semibold">DJ</p>
+                    </div>
+                    <div class="bg-white px-8 py-4 my-6 flex justify-evenly items-center rounded-lg hover:shadow-lg hover:shadow-white/50 transition-all duration-200">
+                        <img src="./IMG/Mascot.png" width="93" height="93" alt="">
+
+                        <p class="font-semibold">Mascot</p>
+                    </div>
+                    <div class="bg-white px-8 py-4 my-6 flex justify-evenly items-center rounded-lg hover:shadow-lg hover:shadow-white/50 transition-all duration-200">
+                        <img src="./IMG/Unicycle.png" width="93" height="93" alt="">
+
+                        <p class="font-semibold">Acrobats</p>
+                    </div>
+                    <div class="bg-white px-8 py-4 my-6 flex justify-evenly items-center rounded-lg hover:shadow-lg hover:shadow-white/50 transition-all duration-200">
+                        <img src="./IMG/Dancing.png" height="93" width="93" alt="">
+
+                        <p class="font-semibold">Dance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="bg-[#6420D4] w-full py-20"></div>
+
+    <section class="py-10 bg-gray-50 sm:py-16 lg:py-24">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl font-bold leading-tight text-[#6420D4] sm:text-4xl lg:text-5xl">Decouvrez <span class="text-[#FC2D7A]">Nos Packs</span> Exclusives</h2>
+            </div>
+    
+            <div class="grid max-w-6xl grid-cols-1 gap-6 mx-auto mt-8 sm:mt-16 sm:grid-cols-3">
+
+                <!--* PACK 1*-->
+                
+                <div class="bg-white border-4 border-[#6420D4] border-opacity-60 rounded-md">
+                    <div class="p-6 md:py-10 md:px-9">
+                        <!-- <div class="inline-block px-4 py-2 bg-gray-100 rounded-full">
+                            <h3 class="text-sm font-semibold text-gray-900">Standard</h3>
+                        </div> -->
+                        <p class="mt-5 text-5xl font-bold text-[#6420D4]">Standard</p>
+                        <!-- <p class="mt-2 text-base text-gray-600">Per month</p> -->
+    
+                        <ul class="flex flex-col mt-8 space-y-4">
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900">DJ</span>
+                            </li>
+    
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> Animation </span>
+                            </li>
+    
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> Decoration </span>
+                            </li>
+    
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> Mascottes </span>
+                            </li>
+
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-gray-400 opacity-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-400"> Maquillage </span>
+                            </li>
+
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-gray-400 opacity-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-400"> Jeux </span>
+                            </li>
+
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-gray-400 opacity-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-400"> Tables Buffet </span>
+                            </li>
+
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-gray-400 opacity-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-400"> show magic </span>
+                            </li>
+
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-gray-400 opacity-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-400"> Karaoke </span>
+                            </li>
+
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-gray-400 opacity-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-400"> Photographe </span>
+                            </li>
+                        </ul>
+    
+                        <a href="#" title="" class="inline-flex items-center justify-center w-full px-4 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-[#6420D4] rounded-md hover:shadow-lg hover:shadow-[#6420D4]/50" role="button"> réserver maintenant </a>
+    
+                        <p class="mt-5 text-sm text-gray-500">No Credit Card Required</p>
+                    </div>
+                </div>
+
+                <!--* PACK 2 *-->
+
+                <div class="bg-white border-4 border-[#FC2D7A] rounded-md">
+                    <div class="p-6 md:py-10 md:px-9">
+                        <!-- <div class="inline-block px-4 py-2 bg-violet-300 rounded-full">
+                            <h3 class="text-sm font-semibold text-purple-600">Extra</h3>
+                        </div> -->
+                        <p class="mt-5 text-5xl font-bold text-[#6420D4]">Extra</p>
+                        <!-- <p class="mt-2 text-base text-gray-600">Per month</p> -->
+    
+                        <ul class="flex flex-col mt-8 space-y-4">
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> DJ </span>
+                            </li>
+    
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> Animation </span>
+                            </li>
+    
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> Decoration </span>
+                            </li>
+    
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> Mascottes </span>
+                            </li>
+    
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> Maquillage </span>
+                            </li>
+
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> Jeux </span>
+                            </li>
+
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-gray-400 opacity-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-400"> Tables Buffet </span>
+                            </li>
+
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-gray-400 opacity-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-400"> show magic </span>
+                            </li>
+
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-gray-400 opacity-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-400"> Karaoke </span>
+                            </li>
+
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-gray-400 opacity-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-400"> Photographe </span>
+                            </li>
+                        </ul>
+    
+                        <a href="#" title="" class="inline-flex items-center justify-center w-full px-4 py-4 mt-8 font-semibold text-white transition-all duration-200 rounded-md bg-[#FC2D7A] hover:shadow-lg hover:shadow-[#FC2D7A]/50" role="button"> réserver maintenant </a>
+    
+                        <p class="mt-5 text-sm text-gray-500">No Credit Card Required</p>
+                    </div>
+                </div>
+                
+                <!--* PACK 3 *-->    
+                
+                <div class="bg-white border-4 border-[#6420D4] border-opacity-60 rounded-md">
+                    <div class="p-6 md:py-10 md:px-9">
+                        <!-- <div class="inline-block px-4 py-2 bg-gray-100 rounded-full">
+                            <h3 class="text-sm font-semibold text-gray-900">Kulshi f'wahd</h3>
+                        </div> -->
+                        <p class="mt-5 text-5xl font-bold text-[#6420D4]">Kulshi f'Wahd</p>
+                        <!-- <p class="mt-2 text-base text-gray-600">Per month</p> -->
+    
+                        <ul class="flex flex-col mt-8 space-y-4">
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900">DJ</span>
+                            </li>
+    
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> Animation </span>
+                            </li>
+    
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> Decoration </span>
+                            </li>
+    
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> Mascottes </span>
+                            </li>
+    
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> Jeux </span>
+                            </li>
+
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> Tables Buffet </span>
+                            </li>
+
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> show magic </span>
+                            </li>
+
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> Karaoke </span>
+                            </li>
+
+                            <li class="inline-flex items-center space-x-2">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-base font-medium text-gray-900"> Photographe </span>
+                            </li>
+                        </ul>
+    
+                        <a href="#" title="" class="inline-flex items-center justify-center w-full px-4 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-[#6420D4] rounded-md hover:shadow-lg hover:shadow-[#6420D4]/50" role="button"> réserver maintenant </a>
+    
+                        <p class="mt-5 text-sm text-gray-500">No Credit Card Required</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-[#6420D4] w-full py-20"></div>
+
+    <section class="relative py-10 bg-gray-900 sm:py-16 lg:py-28">
+        <div class="absolute inset-0">
+            <img class="object-cover w-full h-full blur-sm" src="./IMG/micro.jpeg" alt="" />
+        </div>
+        <div class="absolute inset-0 bg-gray-900/20"></div>
+    
+        <div class="relative max-w-lg px-4 mx-auto sm:px-0">
+            <div class="overflow-hidden">
+                <div class="px-4 py-6 sm:px-8 sm:py-7">
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold text-white">Alphabet +</h2>
+                        <p class="mt-2 text-base text-neutral-200">Alphabet Plus: Systeme d'abonnement pour les ecoles ceant des evenements mensuel a un prix annuel raisonable, avec garantie.</p>
+                    </div>
+                    
+                    <div class="px-6 mt-2">
+                        <a href="#" title="" class="inline-flex items-center justify-center w-full px-4 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-[#6420D4] rounded-md hover:shadow-lg hover:shadow-[#6420D4]/50" role="button"> En savoir plus </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer container -->
+    <footer class="bg-[#6420D4] text-center text-white lg:text-left">
+    <div class="flex items-center justify-center border-b-2 border-neutral-200 p-6 lg:justify-between">
+    <div class="mr-12 hidden lg:block">
+        <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Social network icons container -->
+    <div class="flex justify-center">
+        <a href="#!" class="mr-6 text-white">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4"
+            fill="currentColor"
+            viewBox="0 0 24 24">
+            <path
+            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+        </svg>
+        </a>
+        <a href="#!" class="mr-6 text-white">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4"
+            fill="currentColor"
+            viewBox="0 0 24 24">
+            <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+        </svg>
+        </a>
+        <a href="#!" class="mr-6 text-white">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4"
+            fill="currentColor"
+            viewBox="0 0 24 24">
+            <path
+            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+        </svg>
+        </a>
+    </div>
+    </div>
+
+    <div class="mx-6 py-10 text-center md:text-left">
+    <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+        <div class="">
+            <img width="180" height="140" src="./IMG/Logo-alp.png" alt="">
+        </div>
+        <!-- Services section -->
+        <div class="">
+        <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            Services
+        </h6>
+        <p class="mb-4">
+            <a href="#!" class="text-white">DJ</a>
+        </p>
+        <p class="mb-4">
+            <a href="#!" class="text-white">Animation</a>
+        </p>
+        <p class="mb-4">
+            <a href="#!" class="text-white">Mascottes</a>
+        </p>
+        <p>
+            <a href="#!" class="text-white">Magic</a>
+        </p>
+        </div>
+
+        <div class="">
+        <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            Liens
+        </h6>
+        <p class="mb-4">
+            <a href="#!" class="text-white">Packs</a>
+        </p>
+        <p class="mb-4">
+            <a href="#!" class="text-white">Alphabet +</a>
+        </p>
+        <p class="mb-4">
+            <a href="#!" class="text-white">Sitemap</a>
+        </p>
+        <p>
+            <a href="#!" class="text-white">Contact</a>
+        </p>
+        </div>
+        <!-- Contact section -->
+        <div>
+        <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            Contact
+        </h6>
+        <p class="mb-4 flex items-center justify-center md:justify-start">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="mr-3 h-5 w-5">
+            <path
+                d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+            <path
+                d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+            </svg>
+            Kenitra - Maroc
+        </p>
+        <p class="mb-4 flex items-center justify-center md:justify-start">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="mr-3 h-5 w-5">
+            <path
+                d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+            <path
+                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+            </svg>
+            contact@alphabet.fun
+        </p>
+        <p class="mb-4 flex items-center justify-center md:justify-start">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="mr-3 h-5 w-5">
+            <path
+                fill-rule="evenodd"
+                d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                clip-rule="evenodd" />
+            </svg>
+            07 01 18 63 90
+        </p>
+        </div>
+    </div>
+    </div>
+
+    <!--Copyright section-->
+    <div class="bg-[#6420D4] border-t-2 border-neutral-200 p-6 text-center">
+    <span>© 2023 Copyright:</span>
+    <p class="font-semibold text-[#FC2D7A]">Alphabet corp.</p>
+    </div>
+    </footer>
+
+</main>
+<script src="./index.js"></script>
+</body>
+</html>
